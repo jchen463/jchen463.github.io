@@ -1,0 +1,161 @@
+.carousel-indicators li { visibility: hidden; }
+
+section{border-style: dotted;}
+
+#Team_photos{
+  text-align: center;
+}
+
+.board_photo{
+    display: inline-block;
+    margin: 20px;
+    height: 250px;
+    width: 250px;
+}
+
+.carousel-inner{
+  width:100%;
+  background-size: cover;
+  background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+}
+
+.carousel-inner>.item {
+  width: 100%;
+
+}
+
+img.slideshow_image{
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  height: auto;
+}
+img.center_image{
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  height: auto;
+}
+
+
+.header{
+	background-color: #333
+}
+
+.landing_page{
+	height: 10%;
+	/*height: 90vh;*/
+}
+
+.mission_statement{
+	height: 10%;
+	 /*height: 75vh;*/
+   background-color: #00accb;
+}
+
+.block_title{
+	text-align: center;
+	font-size: 200%;
+}
+
+.block_text{
+	margin-right: 10%;
+	margin-left: 10%;
+	/*
+	margin-right: 250px;
+	margin-left: 250px;
+	*/
+}
+
+.volunteer{
+  text-align: center;
+  background-color: white;
+}
+
+.team {
+    text-align: center;
+    background-color: #60AD57;
+    width: 100%;
+    margin: 0 auto;
+    font-family: Avenir, Pier Regular, sans-serif;
+    color: white;
+}
+
+.Faq{
+    text-align: center;
+    background-color: white;
+}
+
+
+.Footer{
+	.Footer {
+    height: 10vh;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-justify-content: space-around;
+    -moz-box-justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-box-align-items: center;
+    -moz-box-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-box-flex-wrap: wrap;
+    -moz-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+li {
+    display: inline;
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.left{
+	float: left;
+}
+
+.white{
+	color: white;
+}
+
+.nav_pad{
+	padding: 14px 16px;
+}
