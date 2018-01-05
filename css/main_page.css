@@ -1,3 +1,11 @@
+.faq-pic{
+  width: 30%;
+}
+
+a .left carousel-control{
+  background-color: red;
+}
+
 .carousel-indicators li { visibility: hidden; }
 
 section{border-style: dotted;}
@@ -84,6 +92,8 @@ img.center_image{
 .Faq{
     text-align: center;
     background-color: white;
+      background-image: url("james-edited-photos/Faqs_Penguin.png");
+   background-position:center;
 }
 
 
