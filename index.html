@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head> 
-	<link rel="stylesheet" href="css/main_page.css">
-
+	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main_page.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 
 	<style>
 	.carousel-inner > .item > img,
@@ -42,27 +44,35 @@
 	  	</nav>
 	  -->
 
-	  <nav class="navbar navbar-inverse">
+	  <img src="james-edited-photos/cs4k_logo.png" style="position:absolute;top:0;left:20px; top:10px; max-width:100px;width:10%;min-width: 60px;display:block;">
+
+	  <nav class="navbar navbar-inverse" id="navbar" style="border: 0px;">
 	  	<div class="container-fluid">
 	  		<div class="navbar-header">
-	  			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+	  			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" style="top: 12px;">
 	  				<span class="icon-bar"></span>
 	  				<span class="icon-bar"></span>
 	  				<span class="icon-bar"></span> 
 	  			</button>
-	  			<a class="navbar-brand" href="#">WebSiteName</a>
+	  			<a class="navbar-brand" href="#" id="brand" style="opacity: 0;">CS4K</a>
 	  		</div>
 	  		<div class="collapse navbar-collapse" style="height: 1px;">
+	  			<!--
 	  			<ul class="nav navbar-nav">
-	  				<li class="active"><a href="#">Home</a></li>
-	  				<li><a href="#">Page 1</a></li>
-	  				<li><a href="#">Page 2</a></li> 
-	  				<li><a href="#">Page 3</a></li> 
+	  				<li><a href="#faq">Faq</a></li>
+	  				<li><a href="#team">Team</a></li>
+	  				<li><a href="#volunteers">Volunteers</a></li>
+	  				<li><a href="#misson_statement">Misson</a></li>
 	  			</ul>
+	  			-->
+	  			
 	  			<ul class="nav navbar-nav navbar-right">
-	  				<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-	  				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	  				<li><a href="#faq">Faq</a></li>
+	  				<li><a href="#team">Team</a></li>
+	  				<li><a href="#volunteers">Volunteers</a></li>
+	  				<li><a href="#misson_statement">Misson</a></li>
 	  			</ul>
+	  		
 	  		</div>
 	  	</div>
 	  </nav>
@@ -235,18 +245,17 @@
 	  		<div class="div-right" style="width: 50%;">
 	  			<h3>Questions</h3>
 
-	  			<p class="accordion">Q1. What currency is the course charged in?</p>
-	  			<div class="panel">A. The course is charged in Australian dollars.</div>
+	  			<p class="accordion">Q1. Question?</p>
+	  			<div class="panel">A. Answer.</div>
 
-	  			<p class="accordion">Q2. What if the course doesn’t help me?</p>
-	  			<div class="panel">A. If it doesn't help you I'll refund the purchase price in full.</div>
+	  			<p class="accordion">Q2. Question?</p>
+	  			<div class="panel">A. Answer.</div>
 
-	  			<p class="accordion">Q3. When will the webinars take place?</p>
-	  			<div class="panel">A. Depending on the mix of countries and time zones for people attending the webinars, I will pick a time that works best for most participants. All webinars will be recorded so you can listen to them again. The private Facebook group will obviously be available 24/7 and I’ll be monitoring and contributing to the discussion regularly.</div>
+	  			<p class="accordion">Q3. Question?</p>
+	  			<div class="panel">A. Answer.</div>
 
-	  			<p class="accordion">Q4. What is the self-directed mentoring program?</p>
-	  			<div class="panel">A. The self-directed mentoring program is designed to help you set-up and run an effective mentee-
-	  		</div>
+	  			<p class="accordion">Q4. Question?</p>
+	  			<div class="panel">A. Answer.</div>
 	  	</div>
 	  	</section>
 
@@ -267,8 +276,6 @@
 </div>
 -->
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
@@ -309,6 +316,32 @@
 	});
 
 </script>
+
+<script type="text/javascript">
+	// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+var brand = document.getElementById("brand");
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+  	navbar.style.position = "fixed";
+  	brand.style.opacity = 1;
+    navbar.classList.add("sticky");
+  } else {
+  	navbar.style.position = "inherit";
+  	brand.style.opacity = 0;
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
 
 </body>
 </html>
