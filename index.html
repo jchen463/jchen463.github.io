@@ -28,25 +28,10 @@
 </head>
 <body style="background-color: powderblue;">
 
-	  	<!--
-	  	<nav class="navbar navbar-default">
-	  		<div class="container-fluid">
-	  			<div class="navbar-header">
-	  				<a class="navbar-brand" href="#"><img src="james-edited-photos/cs4k_logo.png" style="height: 150%;"></a>
-	  			</div>
-	  			<ul class="nav navbar-nav">
-	  				<li><a href="#faq">Faq</a></li>
-	  				<li><a href="#team">Team</a></li>
-	  				<li><a href="#volunteers">Volunteers</a></li>
-	  				<li><a href="#misson_statement">Misson</a></li>
-	  			</ul>
-	  		</div>
-	  	</nav>
-	  -->
 
 	  <img src="james-edited-photos/cs4k_logo.png" style="position:absolute;top:0;left:20px; top:10px; max-width:100px;width:10%;min-width: 60px;display:block;">
 
-	  <nav class="navbar navbar-inverse" id="navbar" style="border: 0px;">
+	  <nav class="navbar navbar-inverse" id="navbar" style="border: 0px; margin-bottom: 50px;">
 	  	<div class="container-fluid">
 	  		<div class="navbar-header">
 	  			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" style="top: 12px;">
@@ -260,15 +245,22 @@
 	  	</section>
 
 
-	<!--
-	<section id="footer" class="Footer">
-		<ul>
-			<li><a href="#about">About</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</section>
--->
+	
+	<div class="clear">
+        <footer>
+            <section>
+                <h3> </h3>
+
+                	<div class = "contact"> 
+                       <a href="mailto:ucd.cs4k@gmail.com"><img src="james-edited-photos/mail.png" draggable="false" align="right"></a>               	
+                        <a href="https://www.facebook.com/ucd.cs4k/"> <img src="james-edited-photos/fb.png" draggable="false" align="right"></i></a>
+                     
+                   	</div>
+                   	  <p> © CS4K 2017 </p>
+            </section>
+        </footer>
+    </div>
+
 
 <!--            
 <div class="container">
@@ -332,10 +324,12 @@ function myFunction() {
   if (window.pageYOffset > sticky) {
   	navbar.style.position = "fixed";
   	brand.style.opacity = 1;
+  	document.body.style.marginTop  = "70px";
     navbar.classList.add("sticky");
   } else {
   	navbar.style.position = "inherit";
   	brand.style.opacity = 0;
+  	document.body.style.marginTop  = "0px";
     navbar.classList.remove("sticky");
   }
 }

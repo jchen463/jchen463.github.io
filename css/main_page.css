@@ -191,6 +191,7 @@ div.panel.show {
   top: 0;
   width: 100%;
   z-index: 9999;
+  clear: both;
 }
 
 .navbar {
@@ -199,6 +200,14 @@ div.panel.show {
 
 .container-fluid{
     background-color: powderblue;
+}
+
+body {
+    min-height: 50px;
+}
+
+.clear{
+  clear:both;
 }
 
 /*
