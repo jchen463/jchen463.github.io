@@ -2,23 +2,21 @@
 <html>
 <head> 
 	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+   	<link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+   	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+   	<link rel="stylesheet" href="css/contact.css">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main_page.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
-
-	<style>
-	.carousel-inner > .item > img,
-	.carousel-inner > .item > a > img {
-		width: 70%;
-		margin: auto;
-	}
-</style>
 
 <script>
 $(document).ready(function(){
@@ -61,7 +59,7 @@ $(document).ready(function(){
 	  				<span class="icon-bar"></span>
 	  				<span class="icon-bar"></span> 
 	  			</button>
-	  			<a class="navbar-brand" href="#" id="brand" style="opacity: 0;">CS4K</a>
+	  			<a class="navbar-brand" href="#" id="brand" style="opacity: 0;">CS4K UC Davis</a>
 	  		</div>
 	  		<div class="collapse navbar-collapse" style="height: 1px;">
 	  			<!--
@@ -74,10 +72,11 @@ $(document).ready(function(){
 	  			-->
 	  			
 	  			<ul class="nav navbar-nav navbar-right">
-	  				<li><a href="#faq">Faq</a></li>
-	  				<li><a href="#team">Team</a></li>
-	  				<li><a href="#volunteers">Volunteers</a></li>
 	  				<li><a href="#misson_statement">Misson</a></li>
+	  				<li><a href="#volunteers">Volunteers</a></li>
+	  				<li><a href="#team">Team</a></li>
+	  				<li><a href="#faq">Faq</a></li>
+	  				<li><a href="#Contact_Us">Contact</a></li>
 	  			</ul>
 	  		
 	  		</div>
@@ -120,11 +119,11 @@ $(document).ready(function(){
 	  </div>
 
 
-	  <section id="page2" class= "mission_statement">
+	  <section id="page2" class="mission_statement clear">
 	  	<a id="misson_statement"></a>
-
-	  	<section class  = "block_text">
-
+	  	<img class = "float-left half-padded" src = "media/MissionStatement (3).jpg">
+	  	<section class  = "block_text float-right half-padded">
+	  		
 	  		<h1 class = block_title>
 	  			Mission Statement
 	  		</h1>
@@ -142,11 +141,9 @@ $(document).ready(function(){
 	  		</p>
 	  	</section>
 
-	  	<img class = "center_image" src = "media/MissionStatement (3).jpg" >
-
 	  </section>
 
-	  <section id="page3" class= "resources">
+	  <section id="page3" class= "resources clear">
 	  	<a id="volunteers" class="smooth"></a>
 	  	<h1 class = block_title>
 	  		Volunteer
@@ -267,6 +264,38 @@ $(document).ready(function(){
 	  	</section>
 
 
+<div class="row">
+<div class="col-sm-6 col-sm-offset-3">
+    <div class="well" style="margin-top: 10%;">
+    <a id="Contact_Us"></a>
+    <h3>Send me a message</h3>
+    <form role="form" id="contactForm" data-toggle="validator" class="shake">
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="name" class="h4">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" required data-error="NEW ERROR MESSAGE">
+                <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="email" class="h4">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="message" class="h4 ">Message</label>
+            <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+            <div class="help-block with-errors"></div>
+        </div>
+        <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+        <div id="msgSubmit" class="h3 text-center hidden"></div>
+        <div class="clearfix"></div>
+    </form>
+    </div>
+</div>
+</div>
+
+
 	
 	<div class="clear">
         <footer>
@@ -291,6 +320,8 @@ $(document).ready(function(){
 -->
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/validator.min.js"></script>
 
 
 <script>

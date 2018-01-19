@@ -93,18 +93,18 @@ img.center_image{
 
 .volunteer{
   text-align: center;
-  background-color: red;
+  background-color:powderblue;
 }
 
 .resources{
    text-align: center;
-  background-color: purple;
+  background-color: powderblue;
 }
-}
+
 
 .team {
     text-align: center;
-    background-color: #60AD57;
+    background-color: powderblue;
     width: 100%;
     margin: 0 auto;
     font-family: Avenir, Pier Regular, sans-serif;
@@ -196,6 +196,7 @@ div.panel.show {
 
 .navbar {
   position: initial;
+  border: 1px solid transparent;
 }
 
 .container-fluid{
@@ -208,6 +209,29 @@ body {
 
 .clear{
   clear:both;
+}
+
+.container{
+  width:  100%;
+  padding-right: 0px; 
+  padding-left: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.float-left{
+  float:left;
+}
+.float-right{
+  float:right;
+}
+
+.half-padded{
+  width:40%;
+  margin-left:5%;
+  margin-right:5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 /*
