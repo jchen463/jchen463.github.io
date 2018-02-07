@@ -44,7 +44,8 @@ section{border-style: none;}
 }
 
 .main-pic{
-  height:100%;
+  margin-top: 5%;
+  height:90%;
   background-size: cover;
 }
 
@@ -212,7 +213,7 @@ body {
     height:100%;
     background:white;
     overflow: auto;
-    margin-left: calc(100vw - 100%);
+    /*margin-left: calc(100vw - 100%);*/
     margin-right: 0;
 }
 
