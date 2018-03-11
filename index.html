@@ -46,12 +46,10 @@ $(document).ready(function(){
 </script>
 
 </head>
-<body style="background-color: powderblue;">
+<body style="background-color: white;">
+	 <!-- <img src="james-edited-photos/cs4k_logo.png" style="position:absolute;top:0;left:20px; top:10px; max-width:100px;width:10%;min-width: 60px;display:block;"> -->
 
-
-	  <img src="james-edited-photos/cs4k_logo.png" style="position:absolute;top:0;left:20px; top:10px; max-width:100px;width:10%;min-width: 60px;display:block;">
-
-	  <nav class="navbar navbar-inverse" id="navbar" style="border: 0px; margin-bottom: 50px;">
+	  <nav class="navbar navbar-inverse sticky" id="navbar" style="border: 0px; margin-bottom: 50px; position: fixed">
 	  	<div class="container-fluid">
 	  		<div class="navbar-header">
 	  			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" style="top: 12px;">
@@ -59,7 +57,7 @@ $(document).ready(function(){
 	  				<span class="icon-bar"></span>
 	  				<span class="icon-bar"></span> 
 	  			</button>
-	  			<a class="navbar-brand" href="#" id="brand" style="opacity: 0;">CS4K UC Davis</a>
+	  			<a class="navbar-brand" href="#" id="brand" style="opacity: 1;">CS4K UC Davis</a>
 	  		</div>
 	  		<div class="collapse navbar-collapse" style="height: 1px;">
 	  			<!--
@@ -82,7 +80,24 @@ $(document).ready(function(){
 	  		</div>
 	  	</div>
 	  </nav>
-
+	  
+  	  <div class = "main-pic">
+  		<img src = "james-edited-photos/cs4k_main_pic.png" style="width:100%">
+  	  </div>	
+  	  
+	  <div class = "main">
+	  	
+	  <section id="page2" class="mission_statement clear">
+	  	<a id="misson_statement"></a>
+  		<h1 class = block_title>
+  			Mission Statement
+  		</h1>
+  		<div class = "full-padded">
+	  		<p>
+	  			    Computer Science for Kids (CS4K) is a student-run community service organization that provides UC Davis students the opportunity to apply their computer science knowledge and experience in the classrooms.
+	  				CS4K strives to give every child an opportunity to learn computer science and to spark their interest in the field as a possible career path.
+	  		</p>
+	  	</div>
 
 	  <div class="container">	
 	  	<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -117,30 +132,6 @@ $(document).ready(function(){
 	  		</a>
 	  	</div>
 	  </div>
-
-
-	  <section id="page2" class="mission_statement clear">
-	  	<a id="misson_statement"></a>
-	  	<img class = "float-left half-padded" src = "media/MissionStatement (3).jpg">
-	  	<section class  = "block_text float-right half-padded">
-	  		
-	  		<h1 class = block_title>
-	  			Mission Statement
-	  		</h1>
-
-	  		<p>
-	  			Computer Science for Kids (CS4K) is a student-run community service organization that provides UC Davis students the opportunity to apply their computer science knowledge and experience in the classrooms.
-	  		</p>
-
-	  		<p>
-	  			In CS4K, UC Davis volunteers are passionate about computer science and teaching. Our volunteers visit different schools in the Davis and Woodland communities, where they introduce the fundamentals of computer science to elementary and middle school students through programming tools, such as Scratch MIT, Swift Playgrounds, and more.
-	  		</p>
-
-	  		<p>
-	  			CS4K strives to give every child an opportunity to learn computer science and to spark their interest in the field as a possible career path.
-	  		</p>
-	  	</section>
-
 	  </section>
 
 	  <section id="page3" class= "resources clear">
@@ -148,16 +139,26 @@ $(document).ready(function(){
 	  	<h1 class = block_title>
 	  		Volunteer
 	  	</h1>
-	  	volunteers content goes here.
-	  	<br>
-	  	<a href="https://docs.google.com/document/d/1mlIBPf-zZWL_IvytKeo9KVcojxGFt78PQ1XQGmgS-d8/edit" class="btn btn-info" role="button" target="_blank">Apply</a>
-	  	<h1 class = block_title>
-	  		Resources
-	  	</h1>
-	  	<br>
-	  	<a href="https://docs.google.com/document/d/1mlIBPf-zZWL_IvytKeo9KVcojxGFt78PQ1XQGmgS-d8/edit" class="btn btn-info" role="button" target="_blank">Resources</a>
+  		<div class = "full-padded">
+	  		<p>
+	  			In CS4K, UC Davis volunteers are passionate about computer science and teaching. Our volunteers visit different schools in the Davis and Woodland communities, where they introduce the fundamentals of computer science to elementary and middle school students through programming tools, such as Scratch MIT, Swift Playgrounds, and more.
+	  		</p>
+	  		
+	  	</div>
+	  	<section class  = "float-left half-padded-left">
+	  		<h1 class = block_title>
+	  			Join us!
+	  		</h1>
+	  		<p>
+	  			We are currently looking for volunteers for Spring Quarter 2018.
+	  		</p>
+		  	<a href="https://docs.google.com/document/d/1mlIBPf-zZWL_IvytKeo9KVcojxGFt78PQ1XQGmgS-d8/edit" class="btn btn-info" role="button" target="_blank">Apply</a>
+		  	<br><br>
+		  	<a href="https://docs.google.com/document/d/1mlIBPf-zZWL_IvytKeo9KVcojxGFt78PQ1XQGmgS-d8/edit" class="btn btn-info" role="button" target="_blank">Resources</a>
+	  	</section>
+	  		<img class = "float-left half-padded-right" src = "james-edited-photos/cs4k_volunteers.png">
 	  </section>
-
+	  <br>
 	  <section id="page4" class= "team">
 	  	<a id="team"></a>
 	  	<h1 class = block_title>
@@ -242,12 +243,9 @@ $(document).ready(function(){
 	  <section id="page5" class = "Faq">
 	  	<a id="faq"></a>
 	  	<h1 class = "block_title">Faqs</h1>
-	  	<div>
-	  		<div class="div-left" style="width: 50%; float: left;">
-	  			<img src = "james-edited-photos/Faqs_Penguin.png" class="faq-pic">
-	  		</div>
-	  		<div class="div-right" style="width: 50%;">
-	  			<h3>Questions</h3>
+	  	<br><br>
+	  		<img class = "float-left half-padded-left" src = "james-edited-photos/new_faq.png">
+	  		<div class="float-right half-padded-right">
 
 	  			<p class="accordion">Q1. Question?</p>
 	  			<div class="panel">A. Answer.</div>
@@ -259,6 +257,9 @@ $(document).ready(function(){
 	  			<div class="panel">A. Answer.</div>
 
 	  			<p class="accordion">Q4. Question?</p>
+	  			<div class="panel">A. Answer.</div>
+	  			
+	  			<p class="accordion">Q5. Question?</p>
 	  			<div class="panel">A. Answer.</div>
 	  	</div>
 	  	</section>
@@ -311,6 +312,7 @@ $(document).ready(function(){
             </section>
         </footer>
     </div>
+    </div>
 
 
 <!--            
@@ -362,6 +364,7 @@ $(document).ready(function(){
 
 </script>
 
+<!--
 <script type="text/javascript">
 	// When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};
@@ -377,18 +380,17 @@ function myFunction() {
   if (window.pageYOffset > sticky) {
   	navbar.style.position = "fixed";
   	brand.style.opacity = 1;
-  	document.body.style.marginTop  = "70px";
+  	//document.body.style.marginTop  = "70px";
     navbar.classList.add("sticky");
   } else {
-  	navbar.style.position = "inherit";
-  	brand.style.opacity = 0;
+  	navbar.style.position = "fixed";
+  	brand.style.opacity = 1;
   	document.body.style.marginTop  = "0px";
-    navbar.classList.remove("sticky");
+  	navbar.classList.add("sticky");
   }
 }
 </script>
-
-
+-->
 
 </body>
 </html>

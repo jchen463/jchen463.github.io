@@ -1,5 +1,11 @@
 p{
-  font-size: 20px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1{
+  font-family: "Courier New", Courier, monospace;
 }
 
 .div-left{
@@ -37,6 +43,12 @@ section{border-style: none;}
     width: 250px;
 }
 
+.main-pic{
+  margin-top: 3%;
+  height: 85%;
+  background-size: cover;
+}
+
 .carousel-inner{
   width:100%;
   background-size: cover;
@@ -63,7 +75,6 @@ img.center_image{
 
 
 .header{
-	background-color: #333
 }
 
 .landing_page{
@@ -74,7 +85,6 @@ img.center_image{
 .mission_statement{
 	height: 10%;
 	 /*height: 75vh;*/
-   background-color: #00accb;
 }
 
 .block_title{
@@ -93,27 +103,21 @@ img.center_image{
 
 .volunteer{
   text-align: center;
-  background-color:powderblue;
 }
 
 .resources{
    text-align: center;
-  background-color: powderblue;
 }
 
 
 .team {
     text-align: center;
-    background-color: powderblue;
     width: 100%;
     margin: 0 auto;
-    font-family: Avenir, Pier Regular, sans-serif;
-    color: white;
 }
 
 .Faq{
     text-align: center;
-    background-color: white;
    background-position:center;
 }
 
@@ -204,7 +208,13 @@ div.panel.show {
 }
 
 body {
-    min-height: 50px;
+    margin:0;
+    width:100%;
+    height:100%;
+    background:white;
+    overflow: auto;
+    /*margin-left: calc(100vw - 100%);*/
+    margin-right: 0;
 }
 
 .clear{
@@ -226,12 +236,31 @@ body {
   float:right;
 }
 
-.half-padded{
-  width:40%;
-  margin-left:5%;
-  margin-right:5%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+.half-padded-left{
+  width:50%;
+  padding-left: 10%;
+}
+
+.half-padded-right{
+  width:50%;
+  padding-right: 10%;
+}
+
+.main{
+  max-width:1000px;
+  margin: auto;
+}
+
+.full-padded{
+  width:90%;
+  padding: 5%;
+  margin: auto;
+}
+
+.faq-half{
+  width:50%;
+  padding-right: 5%;
+  margin: auto;
 }
 
 /*
