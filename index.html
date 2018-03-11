@@ -70,41 +70,8 @@ window.addEventListener('scroll', resizeHeaderOnScroll);
 
 </head>
 <body style="background-color: white;">
-	<!--
-	  <img src="james-edited-photos/cs4k_logo.png" style="position:absolute;top:0;left:20px; top:10px; max-width:100px;width:10%;min-width: 60px;display:block;">
 
-	  <nav class="navbar navbar-inverse" id="navbar" style="border: 0px; margin-bottom: 50px;">
-	  	<div class="container-fluid">
-	  		<div class="navbar-header">
-	  			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" style="top: 12px;">
-	  				<span class="icon-bar"></span>
-	  				<span class="icon-bar"></span>
-	  				<span class="icon-bar"></span> 
-	  			</button>
-	  			<a class="navbar-brand" href="#" id="brand" style="opacity: 0;">CS4K UC Davis</a>
-	  		</div>
-	  		<div class="collapse navbar-collapse" style="height: 1px;">
-
-	  			<ul class="nav navbar-nav">
-	  				<li><a href="#faq">Faq</a></li>
-	  				<li><a href="#team">Team</a></li>
-	  				<li><a href="#volunteers">Volunteers</a></li>
-	  				<li><a href="#misson_statement">Misson</a></li>
-	  			</ul>
-	  			
-	  			<ul class="nav navbar-nav navbar-right">
-	  				<li><a href="#misson_statement">Misson</a></li>
-	  				<li><a href="#volunteers">Volunteers</a></li>
-	  				<li><a href="#team">Team</a></li>
-	  				<li><a href="#faq">Faq</a></li>
-	  				<li><a href="#Contact_Us">Contact</a></li>
-	  			</ul>
-	  		
-	  		</div>
-	  	</div>
-	  </nav>
-	  -->
-	    <header id="js-header">
+  <header id="js-header">
       <div class="container-top clearfix">
           <h1 id="logo"><img id = "cs4klogo" src = "james-edited-photos/logo.png" style = "max-height:7.5vw"></h1>
           <nav>
@@ -419,6 +386,7 @@ window.addEventListener('scroll', resizeHeaderOnScroll);
 
 </script>
 
+<!--
 <script type="text/javascript">
 	// When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};
@@ -434,18 +402,17 @@ function myFunction() {
   if (window.pageYOffset > sticky) {
   	navbar.style.position = "fixed";
   	brand.style.opacity = 1;
-  	document.body.style.marginTop  = "70px";
+  	//document.body.style.marginTop  = "70px";
     navbar.classList.add("sticky");
   } else {
-  	navbar.style.position = "inherit";
-  	brand.style.opacity = 0;
+  	navbar.style.position = "fixed";
+  	brand.style.opacity = 1;
   	document.body.style.marginTop  = "0px";
-    navbar.classList.remove("sticky");
+  	navbar.classList.add("sticky");
   }
 }
 </script>
-
-
+-->
 
 </body>
 </html>
