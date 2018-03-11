@@ -38,9 +38,9 @@ section{border-style: none;}
 
 .board_photo{
     display: inline-block;
-    margin: 20px;
-    height: 250px;
-    width: 250px;
+    margin: 0 auto;
+    height: 30%;
+    width: 30%;
 }
 
 .main-pic{
@@ -111,8 +111,7 @@ img.center_image{
 
 .team {
     text-align: center;
-    width: 100%;
-    margin: 0 auto;
+    background-position:center;
 }
 
 .Faq{
@@ -149,7 +148,6 @@ p.accordion {
     border: none;
     outline: none;
     transition: 0.4s;
-    margin-bottom:10px;
 }
 
 /* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -212,7 +210,7 @@ body {
     height:100%;
     background:white;
     overflow: auto;
-    margin-left: calc(100vw - 100%);
+    float: left;
     margin-right: 0;
 }
 
@@ -236,13 +234,90 @@ body {
 }
 
 .half-padded-left{
-  width:50%;
-  padding-left: 10%;
+  max-width:50%;
+  padding-left:10%;
 }
 
 .half-padded-right{
-  width:50%;
-  padding-right: 10%;
+  max-width:50%;
+  padding-right:10%;
+}
+
+.faq-left{
+  max-width:30%;
+}
+
+.faq-right{
+  max-width:70%;
+}
+
+.container-top {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+header {
+	width: 100%;
+	height: 8vw;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background-color: #c6f4e6;
+	transition: height 0.3s;
+}
+
+header h1#logo {
+	display: inline-block;
+	line-height:1em;
+   margin: 0;
+	float: left;
+	font-family: "Open Sans", sans-serif;
+	font-size: 60px;
+	color: #3a7261;
+	font-weight: 400;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+header nav {
+	display: inline-block;
+	float: right;
+}
+
+header nav a {
+	line-height: 150px;
+	margin-left: 20px;
+	color: #3a7261;
+	font-weight: 400;
+	font-size: 1em;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+header nav a:hover {
+	color: #fd5559;
+}
+
+header.smaller {
+	height: 75px;
+}
+
+header.smaller h1#logo {
+	line-height: 75px;
+	font-size: 0px;
+}
+
+header.smaller nav a {
+	line-height: 75px;
 }
 
 .main{
@@ -262,6 +337,10 @@ body {
   margin: auto;
 }
 
+.empty-block{
+  width: 100%;
+  height: 75px;
+}
 /*
 .nav {
     position: fixed;

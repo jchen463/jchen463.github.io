@@ -6,7 +6,12 @@
 	<meta charset="utf-8">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-	<link rel="stylesheet" href="css/animate.css">
+	
+<!-- Start: injected by AdGuard -->
+<script src="//local.adguard.com/adguard-ajax-api/injections/content-script.js?ts=1520740282.818531&amp;sb=1&amp;domain=vfs-gce-usw-359-2.c9.io&amp;mask=103" type="text/javascript" nonce="A4C67E689B7D408F930B2900A2ADD537" crossorigin="anonymous"></script>
+<script src="//local.adguard.com/adguard-ajax-api/injections/userscripts/Adguard Assistant?ts=1519631503.135665" type="text/javascript" nonce="A4C67E689B7D408F930B2900A2ADD537" crossorigin="anonymous"></script>
+<!-- End: injected by AdGuard -->
+<link rel="stylesheet" href="css/animate.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
    	<link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
@@ -43,10 +48,29 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+function resizeHeaderOnScroll() {
+  const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+  shrinkOn = 10,
+  headerEl = document.getElementById('js-header');
+  var logoChange =  document.getElementById('cs4klogo');
+  
+  if (distanceY > shrinkOn) {
+    headerEl.classList.add("smaller");
+    logoChange.style.height = '55px';
+  } else {
+    headerEl.classList.remove("smaller");
+    logoChange.style.height = '130px';
+  }
+}
+
+window.addEventListener('scroll', resizeHeaderOnScroll);
+
 </script>
 
 </head>
 <body style="background-color: white;">
+	<!--
 	  <img src="james-edited-photos/cs4k_logo.png" style="position:absolute;top:0;left:20px; top:10px; max-width:100px;width:10%;min-width: 60px;display:block;">
 
 	  <nav class="navbar navbar-inverse" id="navbar" style="border: 0px; margin-bottom: 50px;">
@@ -60,14 +84,13 @@ $(document).ready(function(){
 	  			<a class="navbar-brand" href="#" id="brand" style="opacity: 0;">CS4K UC Davis</a>
 	  		</div>
 	  		<div class="collapse navbar-collapse" style="height: 1px;">
-	  			<!--
+
 	  			<ul class="nav navbar-nav">
 	  				<li><a href="#faq">Faq</a></li>
 	  				<li><a href="#team">Team</a></li>
 	  				<li><a href="#volunteers">Volunteers</a></li>
 	  				<li><a href="#misson_statement">Misson</a></li>
 	  			</ul>
-	  			-->
 	  			
 	  			<ul class="nav navbar-nav navbar-right">
 	  				<li><a href="#misson_statement">Misson</a></li>
@@ -80,15 +103,29 @@ $(document).ready(function(){
 	  		</div>
 	  	</div>
 	  </nav>
-	  
+	  -->
+	    <header id="js-header">
+      <div class="container-top clearfix">
+          <h1 id="logo"><img id = "cs4klogo" src = "james-edited-photos/logo.png" style = "max-height:7.5vw"></h1>
+          <nav>
+	  			<a href="#misson_statement">Misson</a></li>
+	  			<a href="#volunteers">Volunteers</a></li>
+	  			<a href="#team">Team</a></li>
+	  			<a href="#faq">FAQ</a></li>
+	  			<a href="#Contact_Us">Contact</a></li>
+          </nav>
+      </div>
+  </header>
   	  <div class = "main-pic">
-  		<img src = "james-edited-photos/cs4k_main_pic.png" style="width:100%">
+  		<img src = "james-edited-photos/main.png" style="width:100%">
   	  </div>	
   	  
 	  <div class = "main">
-	  	
+	  <a id="misson_statement"></a>
+	  <div class = "empty-block">	  	
+	  	</div>
+		<div style="clear: both;"></div>
 	  <section id="page2" class="mission_statement clear">
-	  	<a id="misson_statement"></a>
   		<h1 class = block_title>
   			Mission Statement
   		</h1>
@@ -134,8 +171,11 @@ $(document).ready(function(){
 	  </div>
 	  </section>
 
+	  <a id="volunteers" class="smooth"></a>
 	  <section id="page3" class= "resources clear">
-	  	<a id="volunteers" class="smooth"></a>
+	  	<div class = "empty-block">	  	
+	  	</div>
+		<div style="clear: both;"></div>
 	  	<h1 class = block_title>
 	  		Volunteer
 	  	</h1>
@@ -156,11 +196,15 @@ $(document).ready(function(){
 		  	<br><br>
 		  	<a href="https://docs.google.com/document/d/1mlIBPf-zZWL_IvytKeo9KVcojxGFt78PQ1XQGmgS-d8/edit" class="btn btn-info" role="button" target="_blank">Resources</a>
 	  	</section>
-	  		<img class = "float-left half-padded-right" src = "james-edited-photos/cs4k_volunteers.png">
+	  		<img class = "float-left half-padded-right" src = "james-edited-photos/volunteers.png">
 	  </section>
 	  <br>
+	  <div style="clear: both;"></div>
 	  <section id="page4" class= "team">
 	  	<a id="team"></a>
+	  	<div class = "empty-block">	  	
+	  	</div>
+		<div style="clear: both;"></div>
 	  	<h1 class = block_title>
 	  		Team
 	  	</h1>
@@ -169,70 +213,71 @@ $(document).ready(function(){
 	  		<div class = "board_photo">
 	  			<img src = "james-edited-photos/Example_person.png">
 	  			<p style="text-align: center;">
-	  				<strong>Person 1<br></strong>
+	  				<strong>Karen Chen<br></strong>
+	  				<span style="color: grey;">Founder/President</span>
+	  			</p>
+	  		</div>
+	  		<div style="clear: both;"></div>
+	  		<div class = "board_photo">
+	  			<img src = "james-edited-photos/Example_person.png">
+	  			<p style="text-align: center;">
+	  				<strong>Carson Dacus<br></strong>
 	  				<span style="color: grey;">Director</span>
 	  			</p>
 	  		</div>
 	  		<div class = "board_photo">
 	  			<img src = "james-edited-photos/Example_person.png">
 	  			<p style="text-align: center;">
-	  				<strong>Person 2<br></strong>
+	  				<strong>Judy Cheng<br></strong>
 	  				<span style="color: grey;">Director</span>
 	  			</p>
 	  		</div>
 	  		<div class = "board_photo">
 	  			<img src = "james-edited-photos/Example_person.png">
 	  			<p style="text-align: center;">
-	  				<strong>Person 3<br></strong>
+	  				<strong>Hannah Fong<br></strong>
 	  				<span style="color: grey;">Director</span>
 	  			</p>
 	  		</div>
 	  		<div class = "board_photo">
 	  			<img src = "james-edited-photos/Example_person.png">
 	  			<p style="text-align: center;">
-	  				<strong>Person 4<br></strong>
+	  				<strong>Donald Nguyen<br></strong>
 	  				<span style="color: grey;">Director</span>
 	  			</p>
 	  		</div>
 	  		<div class = "board_photo">
 	  			<img src = "james-edited-photos/Example_person.png">
 	  			<p style="text-align: center;">
-	  				<strong>Person 5<br></strong>
+	  				<strong>Giulia Lubet<br></strong>
 	  				<span style="color: grey;">Director</span>
 	  			</p>
 	  		</div>
 	  		<div class = "board_photo">
 	  			<img src = "james-edited-photos/Example_person.png">
 	  			<p style="text-align: center;">
-	  				<strong>Person 6<br></strong>
+	  				<strong>Jingwen Low<br></strong>
 	  				<span style="color: grey;">Director</span>
 	  			</p>
 	  		</div>
 	  		<div class = "board_photo">
 	  			<img src = "james-edited-photos/Example_person.png">
 	  			<p style="text-align: center;">
-	  				<strong>Person 7<br></strong>
+	  				<strong>Alan Zambrano<br></strong>
 	  				<span style="color: grey;">Director</span>
 	  			</p>
 	  		</div>
 	  		<div class = "board_photo">
 	  			<img src = "james-edited-photos/Example_person.png">
 	  			<p style="text-align: center;">
-	  				<strong>Person 8<br></strong>
+	  				<strong>Eric Lam<br></strong>
 	  				<span style="color: grey;">Director</span>
 	  			</p>
 	  		</div>
 	  		<div class = "board_photo">
 	  			<img src = "james-edited-photos/Example_person.png">
 	  			<p style="text-align: center;">
-	  				<strong>Person 9<br></strong>
-	  				<span style="color: grey;">Director</span>
-	  			</p>
-	  		</div>
-	  		<div class = "board_photo">
-	  			<img src = "james-edited-photos/Example_person.png">
-	  			<p style="text-align: center;">
-	  				<strong>Person 10<br></strong>
+	  				<strong>James Chen<br></strong>
 	  				<span style="color: grey;">Director</span>
 	  			</p>
 	  		</div>
@@ -242,33 +287,43 @@ $(document).ready(function(){
 
 	  <section id="page5" class = "Faq">
 	  	<a id="faq"></a>
-	  	<h1 class = "block_title">Faqs</h1>
+	  	<div class = "empty-block">	  	
+	  	</div>
+		<div style="clear: both;"></div>
+	  	<h1 class = "block_title">FAQ</h1>
 	  	<br><br>
-	  		<img class = "float-left half-padded-left" src = "james-edited-photos/new_faq.png">
-	  		<div class="float-right half-padded-right">
+	  		<img class = "float-left faq-left" src = "james-edited-photos/new_faq.png">
+	  		<div class="float-right faq-right">
 
-	  			<p class="accordion">Q1. Question?</p>
-	  			<div class="panel">A. Answer.</div>
+	  			<p class="accordion">Q1. Where do you offer volunteer services?</p>
+	  			<div class="panel">A. We currently volunteer at 5 locations in Yolo County: St. James, Woodland Library, Pioneer Elementary, Something else. <br>
+	  			<br>But we are always looking for new locations to collaborate with.</br.></div>
 
-	  			<p class="accordion">Q2. Question?</p>
-	  			<div class="panel">A. Answer.</div>
+	  			<p class="accordion">Q2. Who can volunteer?</p>
+	  			<div class="panel">A. If you would like to join us, please fill out the forms blah blah.</div>
+	  			
+	  			<p class="accordion">Q3. Is it possible to get units for volunteering?</p>
+	  			<div class="panel">A. Yes!</div>
 
 	  			<p class="accordion">Q3. Question?</p>
 	  			<div class="panel">A. Answer.</div>
-
-	  			<p class="accordion">Q4. Question?</p>
-	  			<div class="panel">A. Answer.</div>
 	  			
-	  			<p class="accordion">Q5. Question?</p>
-	  			<div class="panel">A. Answer.</div>
+	  			<p class="accordion">Q5. Who funds this program?</p>
+	  			<div class="panel">A. We are currently a student-lead organization, and get most of our fundings through grants.<br>
+	  			If you would like to donate to us, please contact us below for more information.</div>
 	  	</div>
 	  	</section>
 
 
+<div style="clear: both;"></div>
+<a id="Contact_Us"></a>
+<div class = "empty-block">	  	
+  </div>
+<div style="clear: both;"></div>
+<h1 class = "block_title">Contact</h1>
 <div class="row">
 <div class="col-sm-6 col-sm-offset-3">
     <div class="well" style="margin-top: 10%;">
-    <a id="Contact_Us"></a>
     <h3>Send me a message</h3>
     <form role="form" id="contactForm" data-toggle="validator" class="shake">
         <div class="row">
