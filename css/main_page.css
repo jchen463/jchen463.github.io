@@ -228,11 +228,7 @@ body {
     height:100%;
     background:white;
     overflow: auto;
-<<<<<<< HEAD
     float: left;
-=======
-    /*margin-left: calc(100vw - 100%);*/
->>>>>>> 3972bc8787aaaf74fad23ebd25037e38415650f4
     margin-right: 0;
 }
 
