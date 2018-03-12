@@ -6,11 +6,6 @@
 	<meta charset="utf-8">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-	
-<!-- Start: injected by AdGuard -->
-<script src="//local.adguard.com/adguard-ajax-api/injections/content-script.js?ts=1520740282.818531&amp;sb=1&amp;domain=vfs-gce-usw-359-2.c9.io&amp;mask=103" type="text/javascript" nonce="A4C67E689B7D408F930B2900A2ADD537" crossorigin="anonymous"></script>
-<script src="//local.adguard.com/adguard-ajax-api/injections/userscripts/Adguard Assistant?ts=1519631503.135665" type="text/javascript" nonce="A4C67E689B7D408F930B2900A2ADD537" crossorigin="anonymous"></script>
-<!-- End: injected by AdGuard -->
 <link rel="stylesheet" href="css/animate.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
@@ -52,15 +47,15 @@ $(document).ready(function(){
 function resizeHeaderOnScroll() {
   const distanceY = window.pageYOffset || document.documentElement.scrollTop,
   shrinkOn = 10,
-  headerEl = document.getElementById('js-header');
-  var logoChange =  document.getElementById('cs4klogo');
+  headerEl = document.getElementById('navbar');
+  var logoChange =  document.getElementById('brand');
   
   if (distanceY > shrinkOn) {
     headerEl.classList.add("smaller");
-    logoChange.style.height = '55px';
+    //logoChange.style.height = '55px';
   } else {
     headerEl.classList.remove("smaller");
-    logoChange.style.height = '130px';
+    //logoChange.style.height = '130px';
   }
 }
 
@@ -71,18 +66,43 @@ window.addEventListener('scroll', resizeHeaderOnScroll);
 </head>
 <body style="background-color: white;">
 
-  <header id="js-header">
+<nav class="navbar navbar-inverse sticky" id="navbar" style="border: 0px; margin-bottom: 50px; position: fixed">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" style="top: 12px;">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" id="brand" >CS4K UC Davis</a>
+        </div>
+        <div class="collapse navbar-collapse" style="height: 1px;">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#misson_statement">Misson</a></li>
+                <li><a href="#volunteers">Volunteers</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#faq">Faq</a></li>
+                <li><a href="#Contact_Us">Contact</a></li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<!--
+<header id="js-header">
       <div class="container-top clearfix">
           <h1 id="logo"><img id = "cs4klogo" src = "james-edited-photos/logo.png" style = "max-height:7.5vw"></h1>
-          <nav>
-	  			<a href="#misson_statement">Misson</a></li>
-	  			<a href="#volunteers">Volunteers</a></li>
-	  			<a href="#team">Team</a></li>
-	  			<a href="#faq">FAQ</a></li>
-	  			<a href="#Contact_Us">Contact</a></li>
+          <nav class="collapse navbar-collapse">
+			  </li><a href="#misson_statement">Misson</a></li>
+			  </li><a href="#volunteers">Volunteers</a></li>
+			  </li><a href="#team">Team</a></li>
+			  </li><a href="#faq">FAQ</a></li>
+			  </li><a href="#Contact_Us">Contact</a></li>
           </nav>
       </div>
   </header>
+  -->
   	  <div class = "main-pic">
   		<img src = "james-edited-photos/main.png" style="width:100%">
   	  </div>	
