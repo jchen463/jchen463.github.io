@@ -55,9 +55,9 @@ section{border-style: none;}
 
 .board_photo{
     display: inline-block;
-    margin: 0 auto;
+    margin: 10px 5%;
     height: 30%;
-    width: 30%;
+    width: 35%;
 }
 
 .main-pic{
@@ -219,7 +219,7 @@ div.panel.show {
 }
 
 .container-fluid{
-    background-color: powderblue;
+    #background-color: powderblue;
 }
 
 body {
@@ -266,7 +266,7 @@ body {
 }
 
 .faq-right{
-  max-width:70%;
+  max-width:50%;
 }
 
 .container-top {
@@ -361,7 +361,8 @@ header.smaller nav a {
 }
 
 .officer_pic{
-    height: 200px;
+    max-width:100%;
+    height:auto;
 }
 /*
 .nav {
